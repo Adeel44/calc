@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var person = prompt("Please enter your name", "Harry Potter");
+
+  var invent = [ {name: "test1"} , {name:"test2"} , {name:"test3"}];
+
+var div_s = "";
+  //var invent = [ {name:"test1"} , {name:"test2"} , {name:"test3"}];
+
+ 
+invent.forEach((x ) =>{
+
+div_s = div_s + " " + x.name ;
+  
+})
+   if (person != null){
+   	document.getElementById("demo").innerHTML = div_s + " " + person;
+     }
+
+
+
+
+ // document.getElementById("demo").innerHTML = div_s;
+
+
+ 
+}
+
+</script>
+
+
+</body>
+</html>

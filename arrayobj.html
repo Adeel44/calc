@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+
+	<script type="text/javascript">
+		// var student = [
+		// { name: "Hamid" , age :22 },
+		// { name: "Sara" , age: 21},
+		// { name: " Zoni" , age: 22}
+		// ];
+
+		// console.log(student);
+
+		// for (var i = 0; i <student.length; i++) {
+		// 	document.write(student[i].name + " " + "Age:" + student[i].age + "<br>");
+		// }
+
+		var student = {
+			fname: "Zara", 
+			lname:" Naqi" ,
+			age: 22,
+			email: "hello@yahoo.com" ,
+			favmovies:[ "Dhoom" , "Sholy" , "hum tum"] ,
+			salary:function(){
+				return 25000;
+			},
+			fullname: function(){
+				return this.fname + " " + this.lname;
+			}
+
+		}
+		console.log(student);
+		document.write(student.fullname());
+		document.write("<br>");
+
+
+		 document.write(student.fname + "<br>");
+		 document.write(student.favmovies[1]);
+
+
+		
+	</script>
+</head>
+<body>
+
+
+
+
+
+
+</body>
+</html>
